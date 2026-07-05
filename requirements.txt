@@ -1,0 +1,27 @@
+# Veri toplama (Faz 1)
+requests>=2.31
+httpx>=0.27
+beautifulsoup4>=4.12
+lxml>=5.2
+pdfplumber>=0.11
+pymupdf>=1.24
+playwright>=1.44
+
+# Ön işleme & kalite kontrol (Faz 2)
+pandas>=2.2
+datasketch>=1.6      # MinHash ile near-dup tespiti
+tqdm>=4.66
+python-dotenv>=1.0
+
+# Bilgi grafiği (Faz 3-4)
+neo4j>=5.20
+
+# Not: Zemberek Java tabanlı olduğu için ayrı kurulum gerektirir (JPype üzerinden).
+# NER modülü model içermez; Türkçe NER için HuggingFace'teki BERT tabanlı
+# modellere veya HukukBERT gibi hukuk-alanına-özel modellere bakılmalı.
+
+# İleri seviye / opsiyonel (Faz 5 - fine-tuning)
+# transformers>=4.42
+# peft>=0.11
+# bitsandbytes>=0.43
+# unsloth
